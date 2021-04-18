@@ -10,11 +10,19 @@
 <body>
     <div class="topnav">
         <ul class="topnav_ul">
-        <li><a class="active" href="#home">Home</a></li>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        <li><a class="active" href="#home"><span style="font-size:30px;cursor:pointer" onclick="openNav()">Меню</span></a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a> </li>
         </ul>
       </div>
+      <script src="main.js"></script>
 </body>
 </html>
