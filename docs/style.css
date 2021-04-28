@@ -53,16 +53,24 @@ body
   overflow-x: hidden;
   transition: 0.7s;
   padding-top: 60px;
+
+
 }
 
 .sidenav a {
   text-align: left;
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
+  
+
+}
+
+.sidenav a:not(.closebtn){
+  min-width: 360px
 }
 
 .sidenav a:hover {
