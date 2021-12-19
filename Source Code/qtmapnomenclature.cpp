@@ -6,7 +6,6 @@ QtMapNomenclature::QtMapNomenclature(QWidget *parent)
     , ui(new Ui::QtMapNomenclature)
 {
     ui->setupUi(this);
-    connect(ui->help, SIGNAL(clicked()), this, SLOT(toHelp()));
     connect(ui->calculation, SIGNAL(clicked()), this, SLOT(calculation()));
 }
 

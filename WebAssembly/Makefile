@@ -200,7 +200,6 @@ Makefile: ..\NewQtProj\NewQtProj.pro ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspec
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\qt_config.prf \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\wasm-emscripten\qmake.conf \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\spec_post.prf \
-		.qmake.stash \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\exclusive_builds.prf \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\toolchain.prf \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\default_pre.prf \
@@ -343,7 +342,6 @@ Makefile: ..\NewQtProj\NewQtProj.pro ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspec
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\qt_config.prf:
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\wasm-emscripten\qmake.conf:
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\spec_post.prf:
-.qmake.stash:
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\exclusive_builds.prf:
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\toolchain.prf:
 ..\..\..\Programms\Qt\5.15.2\wasm_32\mkspecs\features\default_pre.prf:
@@ -1168,23 +1166,7 @@ mainwindow.obj: ..\NewQtProj\mainwindow.cpp ..\NewQtProj\mainwindow.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qtouchdevice.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qtabwidget.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qicon.h \
-		ui_mainwindow.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QVariant \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QApplication \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qcoreapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qeventloop.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdesktopwidget.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qguiapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qinputmethod.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QMenuBar \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qmenubar.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qmenu.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qaction.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qactiongroup.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QStatusBar \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qstatusbar.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.obj ..\NewQtProj\mainwindow.cpp
 
 qthint.obj: ..\NewQtProj\qthint.cpp ..\NewQtProj\qthint.h \
@@ -1292,17 +1274,6 @@ qthint.obj: ..\NewQtProj\qthint.cpp ..\NewQtProj\qthint.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qvector2d.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qtouchdevice.h \
 		ui_qthint.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QVariant \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QApplication \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qcoreapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qeventloop.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdesktopwidget.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qguiapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qinputmethod.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QLabel \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlabel.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qframe.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qthint.obj ..\NewQtProj\qthint.cpp
 
@@ -1418,47 +1389,7 @@ qtmapnomenclature.obj: ..\NewQtProj\qtmapnomenclature.cpp ..\NewQtProj\qtmapnome
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qmessagebox.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdialog.h \
 		..\NewQtProj\qthint.h \
-		ui_qtmapnomenclature.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QVariant \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QApplication \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qcoreapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qeventloop.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdesktopwidget.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qguiapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qinputmethod.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QComboBox \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qcombobox.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qabstractitemdelegate.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qstyleoption.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qabstractspinbox.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qvalidator.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qregularexpression.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qslider.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qabstractslider.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qstyle.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qtabbar.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qrubberband.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qframe.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qabstractitemmodel.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QDoubleSpinBox \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qspinbox.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QFrame \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QHBoxLayout \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qboxlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlayoutitem.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qgridlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QLabel \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlabel.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QPushButton \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qpushbutton.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qabstractbutton.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QSpacerItem \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QSpinBox \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QStatusBar \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qstatusbar.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QVBoxLayout
+		ui_qtmapnomenclature.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtmapnomenclature.obj ..\NewQtProj\qtmapnomenclature.cpp
 
 qtsecondwidget.obj: ..\NewQtProj\qtsecondwidget.cpp ..\NewQtProj\qtsecondwidget.h \
@@ -1568,25 +1499,6 @@ qtsecondwidget.obj: ..\NewQtProj\qtsecondwidget.cpp ..\NewQtProj\qtsecondwidget.
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qmessagebox.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdialog.h \
 		ui_qtsecondwidget.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QVariant \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QApplication \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qcoreapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\qeventloop.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qdesktopwidget.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qguiapplication.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qinputmethod.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QFrame \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qframe.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QHBoxLayout \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qboxlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlayoutitem.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qgridlayout.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QLabel \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qlabel.h \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QSpacerItem \
-		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QVBoxLayout \
 		..\NewQtProj\qtmapnomenclature.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\QMainWindow \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qmainwindow.h \
