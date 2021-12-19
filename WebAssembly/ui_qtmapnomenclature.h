@@ -33,24 +33,6 @@ public:
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
     QFrame *line_2;
-    QHBoxLayout *horizontalLayout_5;
-    QLabel *label;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *label_2;
-    QSpacerItem *verticalSpacer_2;
-    QLabel *label_3;
-    QFrame *line_9;
-    QFrame *line_5;
-    QVBoxLayout *verticalLayout_3;
-    QFrame *line_7;
-    QSpacerItem *verticalSpacer;
-    QFrame *line_8;
-    QFrame *line_6;
-    QHBoxLayout *horizontalLayout_6;
-    QSpacerItem *horizontalSpacer_12;
-    QLabel *label_4;
-    QSpacerItem *horizontalSpacer_11;
-    QLabel *label_5;
     QLabel *coordinates;
     QFrame *line_4;
     QHBoxLayout *horizontalLayout_2;
@@ -93,14 +75,14 @@ public:
     {
         if (QtMapNomenclature->objectName().isEmpty())
             QtMapNomenclature->setObjectName(QString::fromUtf8("QtMapNomenclature"));
-        QtMapNomenclature->resize(583, 399);
+        QtMapNomenclature->resize(571, 234);
         QtMapNomenclature->setMinimumSize(QSize(565, 0));
         QtMapNomenclature->setMaximumSize(QSize(80000, 44800));
         centralWidget = new QWidget(QtMapNomenclature);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         verticalLayoutWidget = new QWidget(centralWidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(10, 10, 551, 351));
+        verticalLayoutWidget->setGeometry(QRect(10, 10, 551, 191));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setSpacing(0);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
@@ -115,147 +97,14 @@ public:
 
         verticalLayout->addWidget(line_2);
 
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setSpacing(0);
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        horizontalLayout_5->setContentsMargins(-1, 8, -1, -1);
-        label = new QLabel(verticalLayoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setMinimumSize(QSize(415, 0));
-        label->setMaximumSize(QSize(415, 16777215));
-        QFont font;
-        font.setPointSize(10);
-        label->setFont(font);
-        label->setLayoutDirection(Qt::LeftToRight);
-        label->setAutoFillBackground(true);
-        label->setWordWrap(true);
-
-        horizontalLayout_5->addWidget(label);
-
-        verticalLayout_4 = new QVBoxLayout();
-        verticalLayout_4->setSpacing(6);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        label_2 = new QLabel(verticalLayoutWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        verticalLayout_4->addWidget(label_2);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_4->addItem(verticalSpacer_2);
-
-        label_3 = new QLabel(verticalLayoutWidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-
-        verticalLayout_4->addWidget(label_3);
-
-
-        horizontalLayout_5->addLayout(verticalLayout_4);
-
-        line_9 = new QFrame(verticalLayoutWidget);
-        line_9->setObjectName(QString::fromUtf8("line_9"));
-        line_9->setMinimumSize(QSize(0, 100));
-        line_9->setMaximumSize(QSize(16777215, 100));
-        line_9->setFrameShadow(QFrame::Sunken);
-        line_9->setLineWidth(2);
-        line_9->setFrameShape(QFrame::VLine);
-
-        horizontalLayout_5->addWidget(line_9);
-
-        line_5 = new QFrame(verticalLayoutWidget);
-        line_5->setObjectName(QString::fromUtf8("line_5"));
-        line_5->setMinimumSize(QSize(0, 100));
-        line_5->setMaximumSize(QSize(0, 100));
-        line_5->setSizeIncrement(QSize(0, 100));
-        line_5->setFrameShadow(QFrame::Sunken);
-        line_5->setLineWidth(2);
-        line_5->setFrameShape(QFrame::VLine);
-
-        horizontalLayout_5->addWidget(line_5);
-
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setSpacing(0);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalLayout_3->setSizeConstraint(QLayout::SetFixedSize);
-        verticalLayout_3->setContentsMargins(0, -1, -1, 0);
-        line_7 = new QFrame(verticalLayoutWidget);
-        line_7->setObjectName(QString::fromUtf8("line_7"));
-        line_7->setMinimumSize(QSize(100, 0));
-        line_7->setMaximumSize(QSize(100, 16777215));
-        line_7->setFrameShadow(QFrame::Sunken);
-        line_7->setLineWidth(2);
-        line_7->setMidLineWidth(0);
-        line_7->setFrameShape(QFrame::HLine);
-
-        verticalLayout_3->addWidget(line_7);
-
-        verticalSpacer = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        verticalLayout_3->addItem(verticalSpacer);
-
-        line_8 = new QFrame(verticalLayoutWidget);
-        line_8->setObjectName(QString::fromUtf8("line_8"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(70);
-        sizePolicy.setVerticalStretch(70);
-        sizePolicy.setHeightForWidth(line_8->sizePolicy().hasHeightForWidth());
-        line_8->setSizePolicy(sizePolicy);
-        line_8->setMinimumSize(QSize(100, 0));
-        line_8->setMaximumSize(QSize(100, 16777215));
-        line_8->setFrameShadow(QFrame::Sunken);
-        line_8->setLineWidth(2);
-        line_8->setFrameShape(QFrame::HLine);
-
-        verticalLayout_3->addWidget(line_8);
-
-
-        horizontalLayout_5->addLayout(verticalLayout_3);
-
-        line_6 = new QFrame(verticalLayoutWidget);
-        line_6->setObjectName(QString::fromUtf8("line_6"));
-        line_6->setMinimumSize(QSize(0, 100));
-        line_6->setMaximumSize(QSize(16777215, 100));
-        line_6->setFrameShadow(QFrame::Sunken);
-        line_6->setLineWidth(2);
-        line_6->setFrameShape(QFrame::VLine);
-
-        horizontalLayout_5->addWidget(line_6);
-
-
-        verticalLayout->addLayout(horizontalLayout_5);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setSpacing(6);
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        horizontalSpacer_12 = new QSpacerItem(440, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_12);
-
-        label_4 = new QLabel(verticalLayoutWidget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-
-        horizontalLayout_6->addWidget(label_4);
-
-        horizontalSpacer_11 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_11);
-
-        label_5 = new QLabel(verticalLayoutWidget);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-
-        horizontalLayout_6->addWidget(label_5);
-
-
-        verticalLayout->addLayout(horizontalLayout_6);
-
         coordinates = new QLabel(verticalLayoutWidget);
         coordinates->setObjectName(QString::fromUtf8("coordinates"));
         coordinates->setMinimumSize(QSize(0, 35));
         coordinates->setMaximumSize(QSize(16777215, 35));
-        QFont font1;
-        font1.setPointSize(13);
-        font1.setKerning(true);
-        coordinates->setFont(font1);
+        QFont font;
+        font.setPointSize(13);
+        font.setKerning(true);
+        coordinates->setFont(font);
         coordinates->setContextMenuPolicy(Qt::DefaultContextMenu);
 
         verticalLayout->addWidget(coordinates);
@@ -284,9 +133,9 @@ public:
 
         latitude = new QLabel(verticalLayoutWidget);
         latitude->setObjectName(QString::fromUtf8("latitude"));
-        QFont font2;
-        font2.setPointSize(13);
-        latitude->setFont(font2);
+        QFont font1;
+        font1.setPointSize(13);
+        latitude->setFont(font1);
 
         horizontalLayout_4->addWidget(latitude);
 
@@ -296,11 +145,11 @@ public:
 
         spinBox_lng_gr = new QSpinBox(verticalLayoutWidget);
         spinBox_lng_gr->setObjectName(QString::fromUtf8("spinBox_lng_gr"));
-        QFont font3;
-        font3.setPointSize(11);
-        spinBox_lng_gr->setFont(font3);
-        spinBox_lng_gr->setMinimum(0);
-        spinBox_lng_gr->setMaximum(90);
+        QFont font2;
+        font2.setPointSize(11);
+        spinBox_lng_gr->setFont(font2);
+        spinBox_lng_gr->setMinimum(32);
+        spinBox_lng_gr->setMaximum(79);
         spinBox_lng_gr->setValue(52);
         spinBox_lng_gr->setDisplayIntegerBase(10);
 
@@ -308,13 +157,13 @@ public:
 
         label_10 = new QLabel(verticalLayoutWidget);
         label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setFont(font2);
+        label_10->setFont(font1);
 
         horizontalLayout_4->addWidget(label_10);
 
         spinBox_lng_min = new QSpinBox(verticalLayoutWidget);
         spinBox_lng_min->setObjectName(QString::fromUtf8("spinBox_lng_min"));
-        spinBox_lng_min->setFont(font3);
+        spinBox_lng_min->setFont(font2);
         spinBox_lng_min->setMinimum(0);
         spinBox_lng_min->setMaximum(59);
         spinBox_lng_min->setValue(44);
@@ -323,13 +172,13 @@ public:
 
         label_11 = new QLabel(verticalLayoutWidget);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setFont(font2);
+        label_11->setFont(font1);
 
         horizontalLayout_4->addWidget(label_11);
 
         doubleSpinBox_lng_sec = new QDoubleSpinBox(verticalLayoutWidget);
         doubleSpinBox_lng_sec->setObjectName(QString::fromUtf8("doubleSpinBox_lng_sec"));
-        doubleSpinBox_lng_sec->setFont(font3);
+        doubleSpinBox_lng_sec->setFont(font2);
         doubleSpinBox_lng_sec->setDecimals(4);
         doubleSpinBox_lng_sec->setMaximum(59.999899999999997);
         doubleSpinBox_lng_sec->setSingleStep(0.000100000000000);
@@ -338,7 +187,7 @@ public:
 
         label_12 = new QLabel(verticalLayoutWidget);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setFont(font2);
+        label_12->setFont(font1);
 
         horizontalLayout_4->addWidget(label_12);
 
@@ -366,7 +215,7 @@ public:
 
         longitude = new QLabel(verticalLayoutWidget);
         longitude->setObjectName(QString::fromUtf8("longitude"));
-        longitude->setFont(font2);
+        longitude->setFont(font1);
 
         horizontalLayout_3->addWidget(longitude);
 
@@ -376,7 +225,7 @@ public:
 
         spinBox_lt_gr = new QSpinBox(verticalLayoutWidget);
         spinBox_lt_gr->setObjectName(QString::fromUtf8("spinBox_lt_gr"));
-        spinBox_lt_gr->setFont(font3);
+        spinBox_lt_gr->setFont(font2);
         spinBox_lt_gr->setMinimum(0);
         spinBox_lt_gr->setMaximum(179);
         spinBox_lt_gr->setValue(30);
@@ -386,13 +235,13 @@ public:
 
         label_6 = new QLabel(verticalLayoutWidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setFont(font2);
+        label_6->setFont(font1);
 
         horizontalLayout_3->addWidget(label_6);
 
         spinBox_lt_min = new QSpinBox(verticalLayoutWidget);
         spinBox_lt_min->setObjectName(QString::fromUtf8("spinBox_lt_min"));
-        spinBox_lt_min->setFont(font3);
+        spinBox_lt_min->setFont(font2);
         spinBox_lt_min->setMinimum(0);
         spinBox_lt_min->setMaximum(59);
         spinBox_lt_min->setValue(44);
@@ -401,13 +250,13 @@ public:
 
         label_7 = new QLabel(verticalLayoutWidget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setFont(font2);
+        label_7->setFont(font1);
 
         horizontalLayout_3->addWidget(label_7);
 
         doubleSpinBox_lt_sec = new QDoubleSpinBox(verticalLayoutWidget);
         doubleSpinBox_lt_sec->setObjectName(QString::fromUtf8("doubleSpinBox_lt_sec"));
-        doubleSpinBox_lt_sec->setFont(font3);
+        doubleSpinBox_lt_sec->setFont(font2);
         doubleSpinBox_lt_sec->setDecimals(4);
         doubleSpinBox_lt_sec->setMaximum(59.999899999999997);
         doubleSpinBox_lt_sec->setSingleStep(0.000100000000000);
@@ -416,7 +265,7 @@ public:
 
         label_8 = new QLabel(verticalLayoutWidget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setFont(font2);
+        label_8->setFont(font1);
 
         horizontalLayout_3->addWidget(label_8);
 
@@ -453,7 +302,7 @@ public:
         scale->setObjectName(QString::fromUtf8("scale"));
         scale->setMinimumSize(QSize(0, 20));
         scale->setMaximumSize(QSize(16777215, 30));
-        scale->setFont(font2);
+        scale->setFont(font1);
 
         horizontalLayout->addWidget(scale);
 
@@ -469,10 +318,9 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->addItem(QString());
-        comboBox->addItem(QString());
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
         comboBox->setMinimumSize(QSize(140, 25));
-        comboBox->setFont(font3);
+        comboBox->setFont(font2);
 
         horizontalLayout->addWidget(comboBox);
 
@@ -484,10 +332,10 @@ public:
         calculation->setObjectName(QString::fromUtf8("calculation"));
         calculation->setMinimumSize(QSize(110, 30));
         calculation->setMaximumSize(QSize(110, 30));
-        QFont font4;
-        font4.setPointSize(13);
-        font4.setBold(false);
-        calculation->setFont(font4);
+        QFont font3;
+        font3.setPointSize(13);
+        font3.setBold(false);
+        calculation->setFont(font3);
 
         horizontalLayout->addWidget(calculation);
 
@@ -511,12 +359,6 @@ public:
     void retranslateUi(QMainWindow *QtMapNomenclature)
     {
         QtMapNomenclature->setWindowTitle(QCoreApplication::translate("QtMapNomenclature", "QtMapNomenclature", nullptr));
-        label->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600; text-decoration: underline; color:#7faeb0;\">Map nomenclature</span></p><p>- \321\215\321\202\320\276 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260, \320\272\320\276\321\202\320\276\321\200\320\260\321\217 \320\277\321\200\320\265\320\264\320\275\320\260\320\267\320\275\320\260\321\207\320\265\320\275\320\275\320\260 \320\264\320\273\321\217 \320\276\320\277\321\200\320\265\320\264\320\265\320\273\320\265\320\275\320\270\321\217 \320\275\320\276\320\274\320\265\320\275\320\272\320\273\320\260\321\202\321\203\321\200\321\213 \320\272\320\260\321\200\321\202 \321\200\320\260\320\267\320\273\320\270\321\207\320\275\321\213\321\205 \320\274\320\260\321\201\321\210\321\202\320\260\320\261\320\276\320\262 \320\270 \320\263\321\200\320\260\320\275\320\270\321\206 \320\270\321\205 \321\200\320\260\320\274\320\276\320\272. \320\240\320\260\320\261\320\276\321\202\320\260 \320\277\321\200\320\276\320\263\321\200\320\260\320\274"
-                        "\320\274\321\213 \320\276\320\263\320\260\320\275\320\270\321\207\320\270\320\262\320\260\320\265\321\202\321\201\321\217 \321\203\320\272\320\260\320\267\320\260\320\275\320\275\321\213\320\274\320\270 \320\263\321\200\320\260\320\275\320\270\321\206\320\260\320\274\320\270.</p></body></html>", nullptr));
-        label_2->setText(QCoreApplication::translate("QtMapNomenclature", "80\302\260", nullptr));
-        label_3->setText(QCoreApplication::translate("QtMapNomenclature", "32\302\260", nullptr));
-        label_4->setText(QCoreApplication::translate("QtMapNomenclature", "0\302\260", nullptr));
-        label_5->setText(QCoreApplication::translate("QtMapNomenclature", "180\302\260", nullptr));
         coordinates->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\272\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\321\213</span></p></body></html>", nullptr));
         latitude->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p><span style=\" font-size:14pt;\">\320\250\320\270\321\200\320\276\321\202\320\260 (B):</span></p></body></html>", nullptr));
         label_10->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p><span style=\" font-size:14pt;\">\302\260</span></p></body></html>", nullptr));
@@ -527,14 +369,13 @@ public:
         label_7->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p><span style=\" font-size:14pt;\">'</span></p></body></html>", nullptr));
         label_8->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p><span style=\" font-size:14pt;\">''</span></p></body></html>", nullptr));
         scale->setText(QCoreApplication::translate("QtMapNomenclature", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \320\274\320\260\321\201\321\210\321\202\320\260\320\261</span></p></body></html>", nullptr));
-        comboBox->setItemText(0, QString());
-        comboBox->setItemText(1, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 1 000 000", nullptr));
-        comboBox->setItemText(2, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 100 000", nullptr));
-        comboBox->setItemText(3, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 50 000", nullptr));
-        comboBox->setItemText(4, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 25 000", nullptr));
-        comboBox->setItemText(5, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 10 000", nullptr));
-        comboBox->setItemText(6, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 5 000", nullptr));
-        comboBox->setItemText(7, QCoreApplication::translate("QtMapNomenclature", "\320\234 1 : 2 000", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("QtMapNomenclature", "1 : 1 000 000", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("QtMapNomenclature", "1 : 100 000", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("QtMapNomenclature", "1 : 50 000", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("QtMapNomenclature", "1 : 25 000", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("QtMapNomenclature", "1 : 10 000", nullptr));
+        comboBox->setItemText(5, QCoreApplication::translate("QtMapNomenclature", "1 : 5 000", nullptr));
+        comboBox->setItemText(6, QCoreApplication::translate("QtMapNomenclature", "1 : 2 000", nullptr));
 
         comboBox->setPlaceholderText(QCoreApplication::translate("QtMapNomenclature", "1: 5000", nullptr));
         calculation->setText(QCoreApplication::translate("QtMapNomenclature", "\320\240\320\260\321\201\321\207\321\221\321\202", nullptr));

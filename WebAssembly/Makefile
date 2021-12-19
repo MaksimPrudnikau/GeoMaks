@@ -1166,7 +1166,15 @@ mainwindow.obj: ..\NewQtProj\mainwindow.cpp ..\NewQtProj\mainwindow.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qtouchdevice.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtWidgets\qtabwidget.h \
 		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\QScreen \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\qscreen.h \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QList \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QObject \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QRect \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QSize \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtCore\QSizeF \
+		..\..\..\Programms\Qt\5.15.2\wasm_32\include\QtGui\QTransform
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.obj ..\NewQtProj\mainwindow.cpp
 
 qthint.obj: ..\NewQtProj\qthint.cpp ..\NewQtProj\qthint.h \
